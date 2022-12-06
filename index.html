@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,7 +25,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 90vh;
+        min-height: 100vh;
       }
 
       .card {
@@ -34,7 +34,7 @@
         flex-direction: column;
         align-items: center;
         background-color: white;
-        border-radius: 25px;
+        border-radius: 15px;
         padding: 1%;
         text-align: center;
         font-family: "Outfit", sans-serif;
@@ -50,20 +50,14 @@
       .card .titleCard {
         margin-bottom: -2%;
         font-weight: 700;
+        font-size: 1.5rem;
+        color: hsl(218, 44%, 22%);
       }
 
       .card p {
         padding: 2%;
         font-weight: 400;
-      }
-
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-
-      .attribution a {
-        color: hsl(228, 45%, 44%);
+        color: hsl(220, 15%, 55%);
       }
 
       @media (max-width: 900px) {
@@ -84,24 +78,15 @@
   <body>
     <main>
       <div class="card">
-        <img src="./images/image-qr-code.png" />
-        <p class="titleCard">
+        <img src="./images/image-qr-code.png" alt="qr code image" />
+        <h1 class="titleCard">
           Improve your front-end skills by building projects
-        </p>
+        </h1>
         <p>
           Scan the QR code to visit Frontend Mentor and take your coding skills
           to the next level
         </p>
       </div>
     </main>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by
-      <a href="https://hernandemonteiro.vercel.app" target="_blank"
-        >Hernande Monteiro</a
-      >.
-    </div>
   </body>
 </html>
