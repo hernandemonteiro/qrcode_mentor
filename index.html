@@ -17,6 +17,11 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Outfit:wght@400;700&display=swap");
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
       html {
         background-color: hsl(212, 45%, 89%);
       }
@@ -29,7 +34,7 @@
       }
 
       .card {
-        width: 20%;
+        max-width: 15rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -48,9 +53,9 @@
       }
 
       .card .titleCard {
-        margin-bottom: -2%;
         font-weight: 700;
-        font-size: 1.2rem;
+        font-size: 1rem;
+        padding: 7%;
         color: hsl(218, 44%, 22%);
       }
 
@@ -58,20 +63,18 @@
         padding: 2%;
         font-weight: 400;
         color: hsl(220, 15%, 55%);
-        font-size: 1rem;
+        font-size: 0.9rem;
       }
 
       @media (max-width: 900px) {
         .card {
-          width: 30%;
           padding: 2%;
         }
       }
 
       @media (max-width: 600px) {
         .card {
-          width: 65%;
-          padding: 4%;
+          padding: 3%;
         }
       }
     </style>
